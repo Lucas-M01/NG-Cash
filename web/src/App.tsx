@@ -1,11 +1,12 @@
-import { Home } from "./pages/Home";
+import { BrowserRouter } from 'react-router-dom'
+import { Router } from './Router'
+import './styles/main.css'
 
 
 export function App() {
   return (
-    <div className="bg-[#202024] h-screen" >
-      <Home/>
-    </div>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   )
 }
-
