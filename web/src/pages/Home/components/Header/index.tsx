@@ -1,16 +1,17 @@
 import { Link } from 'react-router-dom'
 import { Heading } from '../../../../components/Heading'
-import { Text } from '../../../../components/Text'
+import { SignOut } from 'phosphor-react'
 
 export function Header() {
     return (
-        <div className="h-16 flex items-center">
-            <header className="text-white mt-4 flex items-center ">
-                <Heading>NG Cash</Heading>
-                <Link to="/">
-                    <Text>Logout</Text>
-                </Link>
-            </header>
+        <div className="p-[2.5rem_0_7.5rem] text-gray-200 bg-gray-800 "> 
+            <div className="flex items-center w-[1344px] px-6 m-auto justify-between">
+                <Heading className="cursor-default">NG Cash</Heading>
+                <Link to="/" className='flex items-center text-red-500 hover:text-red-400 transition-colors gap-2'>
+                    <SignOut size={24} />
+                    Sair
+                </Link>        
+            </div>
         </div>
     )
 }
